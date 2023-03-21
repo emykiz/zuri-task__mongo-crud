@@ -1,0 +1,120 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+}
+body{
+    background-image:url(image/Capture.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.863);
+    position: relative;
+  flex-direction: column;
+display: flex;
+    justify-content: space-between;
+    align-items:baseline;
+    height: 100vh; 
+    font-family: poppins;
+}
+header{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width:250px;
+    margin: auto;
+    background-color: white;
+    margin-top: 100px;
+    border-radius: 5px;
+    display:flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    flex-direction: column;
+    padding: 10px;
+    
+}
+.cont{
+    width:50%;
+ 
+    border-radius: 5px;
+    background-color: white;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.modal-show{
+    visibility: hidden;
+    z-index: -10;
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+    background-color: rgba(165, 42, 42, 0.651);
+}
+.btn{
+    background-color: rgba(99, 240, 221);
+    border: none;
+    height:30px;
+    font-weight: bold;
+    width:110px;
+}
+.modal-new{
+    visibility: visible;
+    z-index: 10;
+}
+.close-btn{
+    
+    color: brown;
+    font-size: 30px;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-self: flex-end;
+    margin-right: 10px;
+}
+.sharepoint{
+    width:100%;
+    background-color: blue;
+    color:white;
+    font-weight: 700;
+    display: flex;
+    gap:1em;
+}
+.same{
+    width:80%;
+    border-bottom: 1px solid grey;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap:1em;
+    cursor: pointer;
+    font-size: 13px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    font-weight: bold;
+}
+footer{
+    width: 100%;
+    background-color: blue;
+    text-align: center;
+    color: white;
+    /* position: absolute;margin-bottom: 0; */
+}
+@media only screen and (max-width:400px){
+    .container{
+        width:50%;
+        font-size: smaller;
+    }
+    footer{
+        font-size: 10px;
+    }
+}
